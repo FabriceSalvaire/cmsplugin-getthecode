@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-from cmsplugin-getthecode import __version__
+from cmsplugin_getthecode import __version__
 
 REQUIREMENTS = [
     'django-cms>=3.0.12',
