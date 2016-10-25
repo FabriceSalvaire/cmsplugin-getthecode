@@ -1,0 +1,6 @@
+{
+    "package-name": "cmsplugin-getthecode",
+    "installed-apps": [
+	"cmsplugin-getthecode"
+    ]
+}

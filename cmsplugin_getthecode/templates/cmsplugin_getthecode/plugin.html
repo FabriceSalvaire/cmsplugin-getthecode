@@ -1,0 +1,12 @@
+<style type="text/css">
+{{ css|safe }}
+</style>
+
+<div class="getthecode">
+    <div class="getthecode-header">
+	<a class="getthecode-filename" href="{{ source_file.url }}">
+	    {% if source_file.name %}{{ source_file.name }}{% else %}{{ source_file.original_filename }}{% endif %}
+	</a>
+    </div>
+    {{ source_html|safe }}
+</div>
