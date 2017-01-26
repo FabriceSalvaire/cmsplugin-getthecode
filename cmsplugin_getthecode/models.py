@@ -7,7 +7,9 @@ from cms.models import CMSPlugin
 from filer.fields.image import FilerFileField
 
 from pygments.styles import get_all_styles
-from pygments.lexers import get_all_lexers
+# from pygments.lexers import get_all_lexers
+
+from . import settings
 
 ####################################################################################################
 
@@ -18,7 +20,8 @@ class SourceCodeFile(CMSPlugin):
     """
 
     STYLE_CHOICES = [(x, x) for x in get_all_styles()]
-    LANGUAGE_CHOICES = [(x, x) for x in sorted([x[1][0] for x in get_all_lexers()])]
+    # LANGUAGE_CHOICES = [(x, x) for x in sorted([x[1][0] for x in get_all_lexers()])]
+    LANGUAGE_CHOICES = settings.LANGUAGE_CHOICES
 
     # cmsplugin_ptr = models.OneToOneField(
     #     CMSPlugin,
